@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D745933218B950A003DD6BE /* DetallesPeliculaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D745932218B950A003DD6BE /* DetallesPeliculaController.swift */; };
 		3D891E882189FC2E004B4C45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D891E872189FC2E004B4C45 /* AppDelegate.swift */; };
 		3D891E8A2189FC2E004B4C45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D891E892189FC2E004B4C45 /* ViewController.swift */; };
 		3D891E8D2189FC2E004B4C45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D891E8B2189FC2E004B4C45 /* Main.storyboard */; };
@@ -109,6 +110,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3D745932218B950A003DD6BE /* DetallesPeliculaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesPeliculaController.swift; sourceTree = "<group>"; };
 		3D891E842189FC2E004B4C45 /* peliculas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = peliculas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D891E872189FC2E004B4C45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D891E892189FC2E004B4C45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 			children = (
 				3D891E892189FC2E004B4C45 /* ViewController.swift */,
 				3D891EBF218A015C004B4C45 /* CeldaPeliculaController.swift */,
+				3D745932218B950A003DD6BE /* DetallesPeliculaController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -464,6 +467,7 @@
 			files = (
 				3D891EBB2189FF6E004B4C45 /* Pelicula.swift in Sources */,
 				3D891EBE218A0092004B4C45 /* Datos.swift in Sources */,
+				3D745933218B950A003DD6BE /* DetallesPeliculaController.swift in Sources */,
 				3D891E8A2189FC2E004B4C45 /* ViewController.swift in Sources */,
 				3D891E882189FC2E004B4C45 /* AppDelegate.swift in Sources */,
 				3D891EC0218A015C004B4C45 /* CeldaPeliculaController.swift in Sources */,

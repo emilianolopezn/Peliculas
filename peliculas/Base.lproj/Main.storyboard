@@ -70,6 +70,7 @@
                                         <connections>
                                             <outlet property="lblAño" destination="pO1-WV-Jcb" id="VAw-wz-h1O"/>
                                             <outlet property="lblTitulo" destination="9Hp-RS-bJS" id="eLh-d9-6d7"/>
+                                            <segue destination="HP6-p9-CGZ" kind="show" id="Msp-Cn-cyd"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -103,7 +104,96 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+            <point key="canvasLocation" x="130" y="59"/>
+        </scene>
+        <!--Detalles Pelicula Controller-->
+        <scene sceneID="Xn6-Sm-UFP">
+            <objects>
+                <viewController id="HP6-p9-CGZ" customClass="DetallesPeliculaController" customModule="peliculas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="poo-yQ-zMq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2K-Ht-Ap8">
+                                <rect key="frame" x="16" y="20" width="343" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="npg-Uu-s4J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Año" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B31-rS-gIO">
+                                <rect key="frame" x="16" y="57" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genero" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8x1-az-1d2">
+                                <rect key="frame" x="16" y="86" width="56" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Director" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Bq-xE-vs9">
+                                <rect key="frame" x="16" y="115" width="62" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clasificacion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88d-ZJ-RS2">
+                                <rect key="frame" x="16" y="144" width="97" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duracion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j7l-Wg-YS5">
+                                <rect key="frame" x="16" y="173" width="69" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0K-aH-5hS">
+                                <rect key="frame" x="5" y="0.0" width="36" height="30"/>
+                                <state key="normal" title="Atrás"/>
+                                <connections>
+                                    <action selector="doTapAtras:" destination="HP6-p9-CGZ" eventType="touchUpInside" id="7h5-8H-Hqa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="j7l-Wg-YS5" firstAttribute="leading" secondItem="iUM-3d-cUf" secondAttribute="leading" constant="16" id="3YO-Gk-mLq"/>
+                            <constraint firstItem="U0K-aH-5hS" firstAttribute="top" secondItem="poo-yQ-zMq" secondAttribute="top" id="8ah-zS-hEu"/>
+                            <constraint firstItem="3Bq-xE-vs9" firstAttribute="leading" secondItem="iUM-3d-cUf" secondAttribute="leading" constant="16" id="EjR-ws-9EO"/>
+                            <constraint firstItem="88d-ZJ-RS2" firstAttribute="leading" secondItem="iUM-3d-cUf" secondAttribute="leading" constant="16" id="JZB-LS-ENe"/>
+                            <constraint firstItem="U0K-aH-5hS" firstAttribute="leading" secondItem="iUM-3d-cUf" secondAttribute="leading" constant="5" id="OCU-iH-dfc"/>
+                            <constraint firstItem="8x1-az-1d2" firstAttribute="top" secondItem="B31-rS-gIO" secondAttribute="bottom" constant="8" id="S7r-pY-AmT"/>
+                            <constraint firstItem="j7l-Wg-YS5" firstAttribute="top" secondItem="88d-ZJ-RS2" secondAttribute="bottom" constant="8" id="SRe-nW-cYS"/>
+                            <constraint firstItem="B31-rS-gIO" firstAttribute="top" secondItem="B2K-Ht-Ap8" secondAttribute="bottom" constant="8" id="SX5-Es-tb9"/>
+                            <constraint firstItem="iUM-3d-cUf" firstAttribute="trailing" secondItem="B2K-Ht-Ap8" secondAttribute="trailing" constant="16" id="kUC-Fa-84w"/>
+                            <constraint firstItem="3Bq-xE-vs9" firstAttribute="top" secondItem="8x1-az-1d2" secondAttribute="bottom" constant="8" id="lkV-Kd-1VU"/>
+                            <constraint firstItem="B2K-Ht-Ap8" firstAttribute="top" secondItem="iUM-3d-cUf" secondAttribute="top" id="peP-3Y-vhF"/>
+                            <constraint firstItem="88d-ZJ-RS2" firstAttribute="top" secondItem="3Bq-xE-vs9" secondAttribute="bottom" constant="8" id="qGk-15-VXO"/>
+                            <constraint firstItem="8x1-az-1d2" firstAttribute="leading" secondItem="iUM-3d-cUf" secondAttribute="leading" constant="16" id="rKb-ZU-28m"/>
+                            <constraint firstItem="B31-rS-gIO" firstAttribute="leading" secondItem="iUM-3d-cUf" secondAttribute="leading" constant="16" id="sfy-mM-Nhu"/>
+                            <constraint firstItem="iUM-3d-cUf" firstAttribute="trailing" secondItem="B31-rS-gIO" secondAttribute="trailing" constant="16" id="wiA-FD-tBN"/>
+                            <constraint firstItem="B2K-Ht-Ap8" firstAttribute="leading" secondItem="iUM-3d-cUf" secondAttribute="leading" constant="16" id="ybO-HS-pol"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iUM-3d-cUf"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblAño" destination="B31-rS-gIO" id="LaT-vw-PPJ"/>
+                        <outlet property="lblClasificacion" destination="88d-ZJ-RS2" id="lp3-ZM-nAB"/>
+                        <outlet property="lblDirector" destination="3Bq-xE-vs9" id="jQg-IK-mbI"/>
+                        <outlet property="lblDuracion" destination="j7l-Wg-YS5" id="Yrl-dM-f3i"/>
+                        <outlet property="lblGenero" destination="8x1-az-1d2" id="1Mq-C4-M19"/>
+                        <outlet property="lblTitulo" destination="B2K-Ht-Ap8" id="dLV-iL-tfH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Gu-9c-6kW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1132" y="42.728635682158924"/>
         </scene>
     </scenes>
 </document>

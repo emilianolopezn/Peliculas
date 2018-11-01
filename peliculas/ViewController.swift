@@ -33,14 +33,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var tvResultadosPeliculas: UITableView!
     @IBOutlet weak var aiCargandoBusqueda: UIActivityIndicatorView!
     @IBOutlet weak var txtBusqueda: UITextField!
+    
+    
+    let urlBase = "https://omdbapi.com/?apikey=1d2750f9&s="
+    
     //Actions
     @IBAction func doTapBuscarPelicula(_ sender: Any) {
-    }
-    override func viewDidLoad() {
-        super.viewDidLoad()
         
-        
-        Alamofire.request("https://omdbapi.com/?apikey=1d2750f9&s=godfather").responseJSON{
+        aiCargandoBusqueda.startAnimating()
+        var busqueda = txtBusqueda.text!
+        busqueda = busqueda.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed)!
+        Alamofire.request("\(urlBase)\(busqueda)").responseJSON{
             response in
             
             Datos.resultadosPeliculas.removeAll()
@@ -56,13 +59,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     self.tvResultadosPeliculas.reloadData()
                 }
             }
+            self.aiCargandoBusqueda.stopAnimating()
         }
-        
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destino = segue.destination as? DetallesPeliculaController {
+            destino.pelicula = Datos.resultadosPeliculas[(tvResultadosPeliculas.indexPathForSelectedRow?.row)!]
+        }
     }
 
 
