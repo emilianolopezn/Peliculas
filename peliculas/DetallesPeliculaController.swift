@@ -9,9 +9,12 @@
 import Foundation
 import UIKit
 import Alamofire
+import AlamofireImage
+
 
 class DetallesPeliculaController : UIViewController {
     
+    @IBOutlet weak var imgPoster: UIImageView!
     var pelicula : Pelicula?
     let urlBase = "https://omdbapi.com/?apikey=1d2750f9&i="
     
@@ -55,6 +58,14 @@ class DetallesPeliculaController : UIViewController {
                     if let genero = dictResultado.value(forKey: "Genre") as? String {
                         self.pelicula?.genero = genero
                         self.lblGenero.text = genero
+                    }
+                    if let poster = dictResultado.value(forKey: "Poster") as? String {
+                        self.pelicula?.urlPoster = poster
+                        Alamofire.request(poster).responseImage{
+                            response in
+                            self.imgPoster.image =
+                                response.result.value
+                        }
                     }
                 }
             }

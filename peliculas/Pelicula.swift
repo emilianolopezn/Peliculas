@@ -16,6 +16,7 @@ class Pelicula {
     var genero : String?
     var director : String?
     var duracion : String?
+    var urlPoster : String?
     
     init(titulo : String, año : Int) {
         self.titulo = titulo

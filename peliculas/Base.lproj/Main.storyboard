@@ -129,30 +129,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genero" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8x1-az-1d2">
-                                <rect key="frame" x="16" y="86" width="56" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Director" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Bq-xE-vs9">
-                                <rect key="frame" x="16" y="115" width="62" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clasificacion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88d-ZJ-RS2">
-                                <rect key="frame" x="16" y="144" width="97" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duracion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j7l-Wg-YS5">
-                                <rect key="frame" x="16" y="173" width="69" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0K-aH-5hS">
                                 <rect key="frame" x="5" y="0.0" width="36" height="30"/>
                                 <state key="normal" title="Atrás"/>
@@ -160,6 +136,36 @@
                                     <action selector="doTapAtras:" destination="HP6-p9-CGZ" eventType="touchUpInside" id="7h5-8H-Hqa"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gwh-je-EZG">
+                                <rect key="frame" x="8" y="86" width="359" height="224"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="224" id="x62-eL-7vX"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genero" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8x1-az-1d2">
+                                <rect key="frame" x="16" y="318" width="56" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Director" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Bq-xE-vs9">
+                                <rect key="frame" x="16" y="347" width="62" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clasificacion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88d-ZJ-RS2">
+                                <rect key="frame" x="16" y="376" width="97" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duracion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j7l-Wg-YS5">
+                                <rect key="frame" x="16" y="405" width="69" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -167,13 +173,16 @@
                             <constraint firstItem="U0K-aH-5hS" firstAttribute="top" secondItem="poo-yQ-zMq" secondAttribute="top" id="8ah-zS-hEu"/>
                             <constraint firstItem="3Bq-xE-vs9" firstAttribute="leading" secondItem="iUM-3d-cUf" secondAttribute="leading" constant="16" id="EjR-ws-9EO"/>
                             <constraint firstItem="88d-ZJ-RS2" firstAttribute="leading" secondItem="iUM-3d-cUf" secondAttribute="leading" constant="16" id="JZB-LS-ENe"/>
+                            <constraint firstItem="8x1-az-1d2" firstAttribute="top" secondItem="Gwh-je-EZG" secondAttribute="bottom" constant="8" id="Kzp-MB-5lG"/>
                             <constraint firstItem="U0K-aH-5hS" firstAttribute="leading" secondItem="iUM-3d-cUf" secondAttribute="leading" constant="5" id="OCU-iH-dfc"/>
-                            <constraint firstItem="8x1-az-1d2" firstAttribute="top" secondItem="B31-rS-gIO" secondAttribute="bottom" constant="8" id="S7r-pY-AmT"/>
                             <constraint firstItem="j7l-Wg-YS5" firstAttribute="top" secondItem="88d-ZJ-RS2" secondAttribute="bottom" constant="8" id="SRe-nW-cYS"/>
                             <constraint firstItem="B31-rS-gIO" firstAttribute="top" secondItem="B2K-Ht-Ap8" secondAttribute="bottom" constant="8" id="SX5-Es-tb9"/>
+                            <constraint firstItem="Gwh-je-EZG" firstAttribute="top" secondItem="B31-rS-gIO" secondAttribute="bottom" constant="8" id="VBl-eq-pZp"/>
+                            <constraint firstItem="iUM-3d-cUf" firstAttribute="trailing" secondItem="Gwh-je-EZG" secondAttribute="trailing" constant="8" id="Yp0-uF-A96"/>
                             <constraint firstItem="iUM-3d-cUf" firstAttribute="trailing" secondItem="B2K-Ht-Ap8" secondAttribute="trailing" constant="16" id="kUC-Fa-84w"/>
                             <constraint firstItem="3Bq-xE-vs9" firstAttribute="top" secondItem="8x1-az-1d2" secondAttribute="bottom" constant="8" id="lkV-Kd-1VU"/>
                             <constraint firstItem="B2K-Ht-Ap8" firstAttribute="top" secondItem="iUM-3d-cUf" secondAttribute="top" id="peP-3Y-vhF"/>
+                            <constraint firstItem="Gwh-je-EZG" firstAttribute="leading" secondItem="iUM-3d-cUf" secondAttribute="leading" constant="8" id="pm8-wp-wEe"/>
                             <constraint firstItem="88d-ZJ-RS2" firstAttribute="top" secondItem="3Bq-xE-vs9" secondAttribute="bottom" constant="8" id="qGk-15-VXO"/>
                             <constraint firstItem="8x1-az-1d2" firstAttribute="leading" secondItem="iUM-3d-cUf" secondAttribute="leading" constant="16" id="rKb-ZU-28m"/>
                             <constraint firstItem="B31-rS-gIO" firstAttribute="leading" secondItem="iUM-3d-cUf" secondAttribute="leading" constant="16" id="sfy-mM-Nhu"/>
@@ -183,6 +192,7 @@
                         <viewLayoutGuide key="safeArea" id="iUM-3d-cUf"/>
                     </view>
                     <connections>
+                        <outlet property="imgPoster" destination="Gwh-je-EZG" id="Twd-Br-gO2"/>
                         <outlet property="lblAño" destination="B31-rS-gIO" id="LaT-vw-PPJ"/>
                         <outlet property="lblClasificacion" destination="88d-ZJ-RS2" id="lp3-ZM-nAB"/>
                         <outlet property="lblDirector" destination="3Bq-xE-vs9" id="jQg-IK-mbI"/>
